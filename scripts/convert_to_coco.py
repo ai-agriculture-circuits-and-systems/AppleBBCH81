@@ -13,7 +13,13 @@ def convert_to_coco(images_dir, labels_dir, output_file):
             "contributor": "Yongfu",
             "date_created": "2024/04/12"
         },
-        "licenses": [],
+        "licenses": [
+            {
+                "id": 1,
+                "name": "CC BY 4.0",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            }
+        ],
         "images": [],
         "annotations": [],
         "categories": [
