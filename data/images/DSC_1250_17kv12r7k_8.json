@@ -1,0 +1,100 @@
+{
+  "info": {
+    "description": "data",
+    "version": "1.0",
+    "year": 2025,
+    "contributor": "search engine",
+    "source": "augmented",
+    "license": {
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "images": [
+    {
+      "id": 3334243433,
+      "width": 640,
+      "height": 640,
+      "file_name": "DSC_1250_17kv12r7k_8.jpg",
+      "size": 100083,
+      "format": "JPEG",
+      "url": "",
+      "hash": "",
+      "status": "success"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 2579746434,
+      "image_id": 3334243433,
+      "category_id": 5529599433,
+      "segmentation": [],
+      "area": 5575.8274854912,
+      "bbox": [
+        395.93600000000004,
+        562.07232,
+        80.06976,
+        69.63712
+      ]
+    },
+    {
+      "id": 4558842434,
+      "image_id": 3334243433,
+      "category_id": 5529599433,
+      "segmentation": [],
+      "area": 3020.7043223552,
+      "bbox": [
+        520.03136,
+        457.12704,
+        54.23744,
+        55.69408
+      ]
+    },
+    {
+      "id": 2878716434,
+      "image_id": 3334243433,
+      "category_id": 5529599433,
+      "segmentation": [],
+      "area": 3684.0932061184,
+      "bbox": [
+        557.85664,
+        308.95616,
+        62.27776,
+        59.15584
+      ]
+    },
+    {
+      "id": 6037805434,
+      "image_id": 3334243433,
+      "category_id": 5529599433,
+      "segmentation": [],
+      "area": 2479.3504710656002,
+      "bbox": [
+        503.71263999999996,
+        321.472,
+        42.451840000000004,
+        58.40384
+      ]
+    },
+    {
+      "id": 1845688434,
+      "image_id": 3334243433,
+      "category_id": 5529599433,
+      "segmentation": [],
+      "area": 2384.5015412735997,
+      "bbox": [
+        621.616,
+        72.0288,
+        36.76736,
+        64.85376
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 5529599433,
+      "name": "AppleBBCH81",
+      "supercategory": "apple"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "info": {
+    "description": "data",
+    "version": "1.0",
+    "year": 2025,
+    "contributor": "search engine",
+    "source": "augmented",
+    "license": {
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "images": [
+    {
+      "id": 5166949147,
+      "width": 640,
+      "height": 640,
+      "file_name": "DSC_1410_17kv39r15k_1.jpg",
+      "size": 85860,
+      "format": "JPEG",
+      "url": "",
+      "hash": "",
+      "status": "success"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 3273080148,
+      "image_id": 5166949147,
+      "category_id": 8392172147,
+      "segmentation": [],
+      "area": 4979.232276480001,
+      "bbox": [
+        550.27584,
+        576.56576,
+        66.528,
+        74.84416
+      ]
+    },
+    {
+      "id": 6230388148,
+      "image_id": 5166949147,
+      "category_id": 8392172147,
+      "segmentation": [],
+      "area": 4085.246341119999,
+      "bbox": [
+        611.216,
+        580.17024,
+        57.568,
+        70.96383999999999
+      ]
+    },
+    {
+      "id": 9380205148,
+      "image_id": 5166949147,
+      "category_id": 8392172147,
+      "segmentation": [],
+      "area": 1549.863636992,
+      "bbox": [
+        627.2928,
+        544.688,
+        25.4144,
+        60.98368
+      ]
+    },
+    {
+      "id": 4859533148,
+      "image_id": 5166949147,
+      "category_id": 8392172147,
+      "segmentation": [],
+      "area": 5781.517939507201,
+      "bbox": [
+        604.28608,
+        345.65824,
+        71.42784,
+        80.94208
+      ]
+    },
+    {
+      "id": 5957123148,
+      "image_id": 5166949147,
+      "category_id": 8392172147,
+      "segmentation": [],
+      "area": 3651.4410897407997,
+      "bbox": [
+        373.47136,
+        537.6166400000001,
+        63.834239999999994,
+        57.20192
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 8392172147,
+      "name": "AppleBBCH81",
+      "supercategory": "apple"
+    }
+  ]
+}

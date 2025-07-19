@@ -1,0 +1,100 @@
+{
+  "info": {
+    "description": "data",
+    "version": "1.0",
+    "year": 2025,
+    "contributor": "search engine",
+    "source": "augmented",
+    "license": {
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "images": [
+    {
+      "id": 7167921528,
+      "width": 640,
+      "height": 640,
+      "file_name": "DSC_1051_17kv1r25k_3.jpg",
+      "size": 47526,
+      "format": "JPEG",
+      "url": "",
+      "hash": "",
+      "status": "success"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 5409771528,
+      "image_id": 7167921528,
+      "category_id": 7290978528,
+      "segmentation": [],
+      "area": 2548.3706417152,
+      "bbox": [
+        34.06336,
+        140.49408,
+        49.821439999999996,
+        51.15008
+      ]
+    },
+    {
+      "id": 9042741528,
+      "image_id": 7167921528,
+      "category_id": 7290978528,
+      "segmentation": [],
+      "area": 1304.2951438335997,
+      "bbox": [
+        137.0272,
+        623.9059199999999,
+        40.520959999999995,
+        32.188159999999996
+      ]
+    },
+    {
+      "id": 8202403528,
+      "image_id": 7167921528,
+      "category_id": 7290978528,
+      "segmentation": [],
+      "area": 1679.1347920895998,
+      "bbox": [
+        628.8153599999999,
+        42.84608,
+        22.369279999999996,
+        75.06432000000001
+      ]
+    },
+    {
+      "id": 1021066528,
+      "image_id": 7167921528,
+      "category_id": 7290978528,
+      "segmentation": [],
+      "area": 5259.012664115199,
+      "bbox": [
+        593.05216,
+        588.88,
+        78.38528,
+        67.09183999999999
+      ]
+    },
+    {
+      "id": 1053963528,
+      "image_id": 7167921528,
+      "category_id": 7290978528,
+      "segmentation": [],
+      "area": 5063.580672000001,
+      "bbox": [
+        559.17312,
+        605.97056,
+        74.4,
+        68.05888
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 7290978528,
+      "name": "AppleBBCH81",
+      "supercategory": "apple"
+    }
+  ]
+}

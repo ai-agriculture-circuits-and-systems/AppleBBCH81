@@ -1,0 +1,100 @@
+{
+  "info": {
+    "description": "data",
+    "version": "1.0",
+    "year": 2025,
+    "contributor": "search engine",
+    "source": "augmented",
+    "license": {
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "images": [
+    {
+      "id": 4439435427,
+      "width": 640,
+      "height": 640,
+      "file_name": "DSC_1341_17kv36r6k_5.jpg",
+      "size": 110832,
+      "format": "JPEG",
+      "url": "",
+      "hash": "",
+      "status": "success"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1246971428,
+      "image_id": 4439435427,
+      "category_id": 9135310427,
+      "segmentation": [],
+      "area": 2616.9086840831997,
+      "bbox": [
+        161.63072,
+        497.82975999999996,
+        54.88704,
+        47.678079999999994
+      ]
+    },
+    {
+      "id": 4086366428,
+      "image_id": 4439435427,
+      "category_id": 9135310427,
+      "segmentation": [],
+      "area": 1750.1914816512,
+      "bbox": [
+        187.1328,
+        480.64383999999995,
+        40.47232,
+        43.24416
+      ]
+    },
+    {
+      "id": 6045286428,
+      "image_id": 4439435427,
+      "category_id": 9135310427,
+      "segmentation": [],
+      "area": 5683.6871553024,
+      "bbox": [
+        200.71424000000002,
+        42.111999999999995,
+        74.28864,
+        76.50816
+      ]
+    },
+    {
+      "id": 9810389428,
+      "image_id": 4439435427,
+      "category_id": 9135310427,
+      "segmentation": [],
+      "area": 3158.7972972543994,
+      "bbox": [
+        408.61503999999996,
+        620.75136,
+        82.05247999999999,
+        38.497279999999996
+      ]
+    },
+    {
+      "id": 6797938428,
+      "image_id": 4439435427,
+      "category_id": 9135310427,
+      "segmentation": [],
+      "area": 3311.2569937920002,
+      "bbox": [
+        89.11936,
+        43.109120000000004,
+        60.5184,
+        54.71488
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 9135310427,
+      "name": "AppleBBCH81",
+      "supercategory": "apple"
+    }
+  ]
+}

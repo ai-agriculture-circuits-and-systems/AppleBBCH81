@@ -1,0 +1,61 @@
+{
+  "info": {
+    "description": "data",
+    "version": "1.0",
+    "year": 2025,
+    "contributor": "search engine",
+    "source": "augmented",
+    "license": {
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "images": [
+    {
+      "id": 1458866411,
+      "width": 640,
+      "height": 640,
+      "file_name": "DSC_1340_17kv36r5k_9.jpg",
+      "size": 58339,
+      "format": "JPEG",
+      "url": "",
+      "hash": "",
+      "status": "success"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 7366820412,
+      "image_id": 1458866411,
+      "category_id": 2730899411,
+      "segmentation": [],
+      "area": 3150.054313984,
+      "bbox": [
+        86.59456,
+        277.08736,
+        58.93504,
+        53.449600000000004
+      ]
+    },
+    {
+      "id": 5710748412,
+      "image_id": 1458866411,
+      "category_id": 2730899411,
+      "segmentation": [],
+      "area": 2186.1084332032,
+      "bbox": [
+        624.09984,
+        330.42175999999995,
+        31.799680000000002,
+        68.74624
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 2730899411,
+      "name": "AppleBBCH81",
+      "supercategory": "apple"
+    }
+  ]
+}

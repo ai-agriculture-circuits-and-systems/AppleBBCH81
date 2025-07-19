@@ -1,0 +1,87 @@
+{
+  "info": {
+    "description": "data",
+    "version": "1.0",
+    "year": 2025,
+    "contributor": "search engine",
+    "source": "augmented",
+    "license": {
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "images": [
+    {
+      "id": 1287027709,
+      "width": 640,
+      "height": 640,
+      "file_name": "DSC_1083_17kv3r11k_1.jpg",
+      "size": 105953,
+      "format": "JPEG",
+      "url": "",
+      "hash": "",
+      "status": "success"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 6889451710,
+      "image_id": 1287027709,
+      "category_id": 9485221709,
+      "segmentation": [],
+      "area": 2909.0274791424,
+      "bbox": [
+        621.74656,
+        189.11168,
+        36.50624,
+        79.68576
+      ]
+    },
+    {
+      "id": 7606756710,
+      "image_id": 1287027709,
+      "category_id": 9485221709,
+      "segmentation": [],
+      "area": 1602.4122114048,
+      "bbox": [
+        14.16768,
+        222.52800000000002,
+        28.33536,
+        56.55168
+      ]
+    },
+    {
+      "id": 3680568710,
+      "image_id": 1287027709,
+      "category_id": 9485221709,
+      "segmentation": [],
+      "area": 1492.4858400768,
+      "bbox": [
+        10.95488,
+        299.00224000000003,
+        21.90976,
+        68.11968
+      ]
+    },
+    {
+      "id": 3368685710,
+      "image_id": 1287027709,
+      "category_id": 9485221709,
+      "segmentation": [],
+      "area": 1873.7276534783998,
+      "bbox": [
+        83.9264,
+        626.62528,
+        70.04736,
+        26.74944
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 9485221709,
+      "name": "AppleBBCH81",
+      "supercategory": "apple"
+    }
+  ]
+}

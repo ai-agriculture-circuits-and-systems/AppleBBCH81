@@ -1,0 +1,48 @@
+{
+  "info": {
+    "description": "data",
+    "version": "1.0",
+    "year": 2025,
+    "contributor": "search engine",
+    "source": "augmented",
+    "license": {
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "images": [
+    {
+      "id": 4242856019,
+      "width": 640,
+      "height": 640,
+      "file_name": "DSC_1400_17kv39r5k_3.jpg",
+      "size": 19543,
+      "format": "JPEG",
+      "url": "",
+      "hash": "",
+      "status": "success"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 3308395020,
+      "image_id": 4242856019,
+      "category_id": 4556725019,
+      "segmentation": [],
+      "area": 2283.3032749056,
+      "bbox": [
+        560.8089600000001,
+        628.80832,
+        102.00896,
+        22.38336
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 4556725019,
+      "name": "AppleBBCH81",
+      "supercategory": "apple"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "info": {
+    "description": "data",
+    "version": "1.0",
+    "year": 2025,
+    "contributor": "search engine",
+    "source": "augmented",
+    "license": {
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "images": [
+    {
+      "id": 9307016901,
+      "width": 640,
+      "height": 640,
+      "file_name": "DSC_1208_17kv9r18k_12.jpg",
+      "size": 69699,
+      "format": "JPEG",
+      "url": "",
+      "hash": "",
+      "status": "success"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 6270608901,
+      "image_id": 9307016901,
+      "category_id": 6348541901,
+      "segmentation": [],
+      "area": 1448.0699097087997,
+      "bbox": [
+        568.2899199999999,
+        30.2592,
+        35.64736,
+        40.62208
+      ]
+    },
+    {
+      "id": 3906075901,
+      "image_id": 9307016901,
+      "category_id": 6348541901,
+      "segmentation": [],
+      "area": 1239.8376775680001,
+      "bbox": [
+        517.3055999999999,
+        165.3888,
+        36.4768,
+        33.989760000000004
+      ]
+    },
+    {
+      "id": 2428739901,
+      "image_id": 9307016901,
+      "category_id": 6348541901,
+      "segmentation": [],
+      "area": 6655.747040870399,
+      "bbox": [
+        493.36576,
+        598.54912,
+        85.40928,
+        77.92768
+      ]
+    },
+    {
+      "id": 7053959901,
+      "image_id": 9307016901,
+      "category_id": 6348541901,
+      "segmentation": [],
+      "area": 3708.5102792704,
+      "bbox": [
+        80.0,
+        309.22304,
+        58.86015999999999,
+        63.00544000000001
+      ]
+    },
+    {
+      "id": 1386565901,
+      "image_id": 9307016901,
+      "category_id": 6348541901,
+      "segmentation": [],
+      "area": 3805.8428702720003,
+      "bbox": [
+        38.61824,
+        228.80832,
+        62.037760000000006,
+        61.3472
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 6348541901,
+      "name": "AppleBBCH81",
+      "supercategory": "apple"
+    }
+  ]
+}

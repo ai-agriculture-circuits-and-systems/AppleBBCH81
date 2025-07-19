@@ -1,0 +1,100 @@
+{
+  "info": {
+    "description": "data",
+    "version": "1.0",
+    "year": 2025,
+    "contributor": "search engine",
+    "source": "augmented",
+    "license": {
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "images": [
+    {
+      "id": 6227420022,
+      "width": 640,
+      "height": 640,
+      "file_name": "DSC_1301_17kv13r18k_7.jpg",
+      "size": 120973,
+      "format": "JPEG",
+      "url": "",
+      "hash": "",
+      "status": "success"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 8789120023,
+      "image_id": 6227420022,
+      "category_id": 9787748022,
+      "segmentation": [],
+      "area": 2557.6558534656,
+      "bbox": [
+        85.95584000000001,
+        623.5232,
+        77.61536000000001,
+        32.95296
+      ]
+    },
+    {
+      "id": 3818161023,
+      "image_id": 6227420022,
+      "category_id": 9787748022,
+      "segmentation": [],
+      "area": 2975.91328768,
+      "bbox": [
+        171.88544000000002,
+        244.192,
+        52.11392,
+        57.104
+      ]
+    },
+    {
+      "id": 7121376023,
+      "image_id": 6227420022,
+      "category_id": 9787748022,
+      "segmentation": [],
+      "area": 4828.054759014401,
+      "bbox": [
+        97.04319999999998,
+        170.45568,
+        73.18144000000001,
+        65.97376
+      ]
+    },
+    {
+      "id": 3875424023,
+      "image_id": 6227420022,
+      "category_id": 9787748022,
+      "segmentation": [],
+      "area": 4361.4814765056,
+      "bbox": [
+        53.243520000000004,
+        142.18176,
+        60.98432,
+        71.51808
+      ]
+    },
+    {
+      "id": 3499656023,
+      "image_id": 6227420022,
+      "category_id": 9787748022,
+      "segmentation": [],
+      "area": 3762.7920384,
+      "bbox": [
+        223.41951999999998,
+        196.06207999999998,
+        60.5184,
+        62.176
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 9787748022,
+      "name": "AppleBBCH81",
+      "supercategory": "apple"
+    }
+  ]
+}

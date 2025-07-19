@@ -1,0 +1,74 @@
+{
+  "info": {
+    "description": "data",
+    "version": "1.0",
+    "year": 2025,
+    "contributor": "search engine",
+    "source": "augmented",
+    "license": {
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "images": [
+    {
+      "id": 6466140007,
+      "width": 640,
+      "height": 640,
+      "file_name": "DSC_1210_17kv10r30k_13.jpg",
+      "size": 99872,
+      "format": "JPEG",
+      "url": "",
+      "hash": "",
+      "status": "success"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 2017568008,
+      "image_id": 6466140007,
+      "category_id": 1515852007,
+      "segmentation": [],
+      "area": 7600.869433344001,
+      "bbox": [
+        251.97056,
+        418.01279999999997,
+        87.77472,
+        86.5952
+      ]
+    },
+    {
+      "id": 2626603008,
+      "image_id": 6466140007,
+      "category_id": 1515852007,
+      "segmentation": [],
+      "area": 7080.632689459201,
+      "bbox": [
+        187.35744,
+        142.80384,
+        82.90176000000001,
+        85.40992
+      ]
+    },
+    {
+      "id": 2023086008,
+      "image_id": 6466140007,
+      "category_id": 1515852007,
+      "segmentation": [],
+      "area": 4392.0901275648,
+      "bbox": [
+        182.44416,
+        26.528640000000003,
+        82.78016,
+        53.057280000000006
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 1515852007,
+      "name": "AppleBBCH81",
+      "supercategory": "apple"
+    }
+  ]
+}

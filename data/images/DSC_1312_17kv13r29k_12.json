@@ -1,0 +1,100 @@
+{
+  "info": {
+    "description": "data",
+    "version": "1.0",
+    "year": 2025,
+    "contributor": "search engine",
+    "source": "augmented",
+    "license": {
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "images": [
+    {
+      "id": 2381479154,
+      "width": 640,
+      "height": 640,
+      "file_name": "DSC_1312_17kv13r29k_12.jpg",
+      "size": 39150,
+      "format": "JPEG",
+      "url": "",
+      "hash": "",
+      "status": "success"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 4796747155,
+      "image_id": 2381479154,
+      "category_id": 8555099154,
+      "segmentation": [],
+      "area": 1511.4680942592,
+      "bbox": [
+        625.34272,
+        593.48608,
+        29.31456,
+        51.56032
+      ]
+    },
+    {
+      "id": 3683575155,
+      "image_id": 2381479154,
+      "category_id": 8555099154,
+      "segmentation": [],
+      "area": 2968.0772653055997,
+      "bbox": [
+        566.0544,
+        476.50816,
+        61.53792,
+        48.23168
+      ]
+    },
+    {
+      "id": 1611550155,
+      "image_id": 2381479154,
+      "category_id": 8555099154,
+      "segmentation": [],
+      "area": 3640.65866752,
+      "bbox": [
+        493.98272,
+        499.792,
+        63.75488,
+        57.104
+      ]
+    },
+    {
+      "id": 6809855155,
+      "image_id": 2381479154,
+      "category_id": 8555099154,
+      "segmentation": [],
+      "area": 4278.48486912,
+      "bbox": [
+        487.60576000000003,
+        559.39008,
+        64.31104,
+        66.528
+      ]
+    },
+    {
+      "id": 2380834155,
+      "image_id": 2381479154,
+      "category_id": 8555099154,
+      "segmentation": [],
+      "area": 2478.4808902656005,
+      "bbox": [
+        442.59968000000003,
+        522.4384,
+        51.208960000000005,
+        48.39936
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 8555099154,
+      "name": "AppleBBCH81",
+      "supercategory": "apple"
+    }
+  ]
+}
