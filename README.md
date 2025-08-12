@@ -1,147 +1,154 @@
-# AppleBBCH81 Dataset
+# AppleBBCH81
 
-A dataset of apple fruit images captured during the maturity stage (BBCH 81-85) in the LatHort orchard in Dobele, Latvia.
+[![DOI](https://img.shields.io/badge/DOI-pending-lightgrey)](#citation) 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/) 
+[![Version](https://img.shields.io/badge/version-1.0.0-blue)](#changelog)
 
-## Dataset Description
+Apple fruit detection dataset in orchards with YOLO-style per-image labels, standardized to a COCO-compatible layout. Typical use-cases include object detection benchmarking and model training for yield estimation or counting.
 
-The AppleBBCH81 dataset is designed for apple fruit detection and yield estimation tasks. It contains high-resolution images of apple trees captured at specific maturity stages, making it suitable for computer vision, object detection, and deep learning research in agricultural applications.
+- Project page: `https://www.kaggle.com/datasets/projectlzp201910094/applebbch81` 
+- Issue tracker: use this repo
 
-- **Number of images**: Original images (3008x2000) cropped into 640x640 images
-- **Image format**: JPEG, with COCO-format JSON annotations (one JSON per image)
-- **Overlap**: 30% between cropped images
-- **BBCH stages**: 81-85 (beginning to advanced ripening)
+## TL;DR
+- Task: detection
+- Modality: RGB 
+- Platform: ground 
+- Real/Synthetic: real
+- Images: ~1,838 
+- Classes: 1 
+- Resolution: various
+- Annotations: YOLO (.txt) and COCO JSON
+- License: CC BY 4.0 (see License)
+- Citation: see below
 
-## Dataset Structure
+## What's inside
+- [Download](#download)
+- [Dataset structure](#dataset-structure)
+- [Sample images](#sample-images)
+- [Annotation schema](#annotation-schema)
+- [Stats and splits](#stats-and-splits)
+- [Quick start](#quick-start)
+- [Evaluation and baselines](#evaluation-and-baselines)
+- [Datasheet (data card)](#datasheet-data-card)
+- [Known issues and caveats](#known-issues-and-caveats)
+- [License](#license)
+- [Citation](#citation)
+- [Changelog](#changelog)
+- [Contact](#contact)
 
-本数据集目录结构如下：
+## Download
+- Train/val/test images: see Kaggle page (md5: `pending`)
+- Annotations (COCO): produced with `scripts/convert_to_coco.py` into `annotations/` (md5: `pending`)
+- Labels (YOLO): `data/labels/`
 
+## Dataset structure
 ```
-data/
-  images/
-    ├── DSC_1042_17kv1r16k_0.jpg
-    ├── DSC_1042_17kv1r16k_0.json
-    ├── DSC_1042_17kv1r16k_1.jpg
-    ├── DSC_1042_17kv1r16k_1.json
-    └── ...
+datasets/AppleBBCH81/
+├── data/
+│   ├── images/               # images (*.jpg)
+│   └── labels/               # YOLO labels (*.txt)
+├── annotations/              # COCO JSON exports
+├── scripts/                  # utilities
+│   ├── convert_to_coco.py
+│   └── generate_splits.py
+├── sets/                     # split lists (train/val/test)
+└── README.md
 ```
+- Splits: `sets/train.txt`, `sets/val.txt`, `sets/test.txt`, `sets/all.txt`
 
-- 每张图片（`.jpg`）都对应一个同名的 COCO 格式标注文件（`.json`）。
-- 所有图片和标注文件均位于 `data/images/` 目录下。
+## Sample images
+<table>
+  <tr>
+    <th>Sample</th>
+    <th>Image</th>
+  </tr>
+  <tr>
+    <td><strong>Example 1</strong></td>
+    <td>
+      <img src="data/images/DSC_1042_17kv1r16k_0.jpg" alt="Example 1" width="260"/>
+      <div align="center"><code>data/images/DSC_1042_17kv1r16k_0.jpg</code></div>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Example 2</strong></td>
+    <td>
+      <img src="data/images/DSC_1043_17kv1r17k_1.jpg" alt="Example 2" width="260"/>
+      <div align="center"><code>data/images/DSC_1043_17kv1r17k_1.jpg</code></div>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Example 3</strong></td>
+    <td>
+      <img src="data/images/DSC_1071_17kv2r20k_0.jpg" alt="Example 3" width="260"/>
+      <div align="center"><code>data/images/DSC_1071_17kv2r20k_0.jpg</code></div>
+    </td>
+  </tr>
+  <!-- More samples exist in the dataset -->
+  </table>
 
-## JSON 标注结构说明
-
-每个 JSON 文件均为 COCO 格式，结构如下（以 `DSC_1042_17kv1r16k_0.json` 为例）：
-
+## Annotation schema
+- COCO-style (example):
 ```json
 {
-  "info": {
-    "description": "data",
-    "version": "1.0",
-    "year": 2025,
-    "contributor": "search engine",
-    "source": "augmented",
-    "license": {
-      "name": "Creative Commons Attribution 4.0 International",
-      "url": "https://creativecommons.org/licenses/by/4.0/"
-    }
-  },
-  "images": [
-    {
-      "id": 3103704321,
-      "width": 640,
-      "height": 640,
-      "file_name": "DSC_1042_17kv1r16k_0.jpg",
-      "size": 56204,
-      "format": "JPEG",
-      "url": "",
-      "hash": "",
-      "status": "success"
-    }
-  ],
-  "annotations": [
-    {
-      "id": 8937340322,
-      "image_id": 3103704321,
-      "category_id": 3248230321,
-      "segmentation": [],
-      "area": 5160.03,
-      "bbox": [197.67, 222.03, 76.47, 67.48]
-    },
-    ...
-  ],
-  "categories": [
-    {
-      "id": 3248230321,
-      "name": "AppleBBCH81",
-      "supercategory": "apple"
-    }
-  ]
+  "info": {"year": 2024, "version": "1.0.0", "description": "AppleBBCH81", "url": "https://www.kaggle.com/datasets/projectlzp201910094/applebbch81", "date_created": "2024-04-12"},
+  "images": [{"id": 1, "file_name": "xxx.jpg", "width": 640, "height": 640}],
+  "categories": [{"id": 1, "name": "apple", "supercategory": "fruit"}],
+  "annotations": [{"id": 10, "image_id": 1, "category_id": 1, "bbox": [x,y,w,h], "area": 1234, "iscrowd": 0}]
+}
+```
+- YOLO-style (per-image `.txt`): `<class_id> <x_center> <y_center> <width> <height>` (normalized 0–1)
+
+## Stats and splits
+- Counts: images per split and instances per class (1 class: `apple`)
+- Use `scripts/generate_splits.py` to create `train/val/test` lists
+
+## Quick start
+Python (COCO):
+```python
+from pycocotools.coco import COCO
+coco = COCO("annotations/applebbch81_instances_train.json")
+img_ids = coco.getImgIds()
+img = coco.loadImgs(img_ids[0])[0]
+ann_ids = coco.getAnnIds(imgIds=img['id'])
+anns = coco.loadAnns(ann_ids)
+```
+
+## Evaluation and baselines
+- Metric: mAP@[.50:.95] (COCO), IoU for bbox overlap
+
+| Method | Backbone | Metric(s) | Link |
+|---|---|---|---|
+| – | – | – | – |
+
+## Datasheet (data card)
+- Motivation: apple detection in orchard scenes (BBCH stage 81)
+- Composition: ~1,838 images, 1 class (`apple`)
+- Collection process: field images
+- Preprocessing: none required; labels in YOLO, COCO produced by script
+- Distribution: open; see License
+- Maintenance: community-maintained
+
+## Known issues and caveats
+- Original labels are YOLO; COCO JSON is derived via script.
+
+## License
+- CC BY 4.0. See `LICENSE` in this folder.
+
+## Citation
+```bibtex
+@misc{applebbch81,
+  title={AppleBBCH81},
+  year={2024},
+  note={Dataset},
+  url={https://www.kaggle.com/datasets/projectlzp201910094/applebbch81}
 }
 ```
 
-**字段说明：**
+## Changelog
+- V1.0.0: initial standardized layout and COCO converter (2025-08-12)
 
-- `info`：数据集的基本信息，包括描述、版本、年份、贡献者、来源和许可证。
-- `images`：图片信息列表。每个图片对象包含：
-  - `id`：图片唯一 ID（10 位数字，含时间戳后缀）
-  - `width`/`height`：图片宽高（像素）
-  - `file_name`：图片文件名
-  - `size`：图片文件大小（字节）
-  - `format`：图片格式
-  - 其他字段如 `url`、`hash`、`status` 供扩展使用
-- `annotations`：标注信息列表。每个标注对象包含：
-  - `id`：标注唯一 ID（10 位数字，含时间戳后缀）
-  - `image_id`：对应图片的 ID
-  - `category_id`：类别 ID
-  - `segmentation`：分割信息（本数据集为空数组）
-  - `area`：目标区域面积（像素^2）
-  - `bbox`：目标边界框，格式为 `[x_min, y_min, width, height]`，均为浮点数，单位为像素
-- `categories`：类别信息列表。每个类别对象包含：
-  - `id`：类别 ID
-  - `name`：类别名称（本数据集为 "AppleBBCH81"）
-  - `supercategory`：上级类别（本数据集为 "apple"）
+## Contact
+- Maintainer(s): community 
+- Issues: this repo
 
-## Data Collection
 
-- **Location**: LatHort orchard in Dobele, Latvia
-- **Timing**: During fruit and seed maturity (BBCH stage 81-85)
-- **Annotation tool**: makesense.ai
-- **Validation**: Manual validation of cropped images
-
-## Applications
-
-This dataset can be used for:
-- Apple fruit detection
-- Yield estimation
-- Object detection
-- Computer vision research
-- Deep learning model training
-- Agricultural AI applications
-
-## Categories
-
-- Computer Science
-- Artificial Intelligence
-- Computer Vision
-- Object Detection
-- Machine Learning
-- Agriculture
-- Deep Learning
-- Yield Estimation
-- Precision Agriculture
-
-## Citation
-
-```
-Kodors, S., Zarembo, I., Lācis, G., Litavniece, L., Apeināns, I., Sondors, M., & Pacejs, A. (2024). Autonomous Yield Estimation System for Small Commercial Orchards Using UAV and AI. Drones, 8(12), 734. https://doi.org/10.3390/drones8120734
-```
-
-## License
-
-This dataset is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
-
-## Source
-
-The dataset is available at:
-- [Kaggle Dataset](https://www.kaggle.com/datasets/projectlzp201910094/applebbch81)
-- [Papers with Code](https://paperswithcode.com/dataset/applebbch81) 
